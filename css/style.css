@@ -73,7 +73,6 @@ nav{
     margin-left: 1vw;
 }
 
-
 .navbar-toggler {
     background-color: #fff !important;
 }
@@ -161,7 +160,7 @@ nav.sticky .search input::-webkit-input-placeholder {
     display: flex;
     align-items: center;
     color: #fff;
-    background-image: url("../img/town.jpg");
+    background-image: url("/img/town.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 !important;
@@ -262,7 +261,7 @@ nav.sticky .search input::-webkit-input-placeholder {
 /* !! Gallery */
 .container-gallery{
     background-color: rgb(145, 143, 143);
-    margin-top: -.1vh;
+    margin-top: 10vh;
     min-height: 117vh;
     overflow: hidden;
 }
@@ -776,11 +775,9 @@ object-fit: cover;
     display: flex;
     margin-top: 10vh;
 }
-.footer-top{
-    display: flex;
-}
+
 .footer-address{
-    width: 50%;
+    width: 35%;
     height: 100%;
 }
 .footer-address p,b{
@@ -808,7 +805,7 @@ object-fit: cover;
 }
 
 .footer-map{
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 .footer-map h2, .footer-socmed h2{
@@ -818,9 +815,9 @@ object-fit: cover;
 }
 
 .footer-socmed{
-    width: 35%;
+    width: 25%;
     height: 100%;
-    margin-left: 3vw;
+    margin-left: auto;
     margin-right: auto;
 }
 .footer-socmed-title{
@@ -910,10 +907,7 @@ object-fit: cover;
 } */
 /* !! End whatsapp logo */
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1){
-    .gallery-card:nth-child(4) img{
-        height: 170px !important;
-    }
+@media all and (min-width: 1280px){
 
     .our-team-img{
         justify-content: center;
@@ -932,261 +926,11 @@ object-fit: cover;
     }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1){
-    .navbar-nav{
-        margin-left: -5rem;
-    }
-    .navbar-brand-img {
+@media all and (min-width: 1024px){
+    .navbar-brand {
         display: none !important;
-        width: 100%;
-        height: 100%;
-    }
-    .nav-socmed {
-        display: none !important;
-    }
-    .gallery-card-container{
-        height: 220vh;
-    }
-    .gallery-card-top{
-        flex-wrap: wrap;
-        display: flex;
-        gap: 7vw;
-    }
-    .gallery-card-bottom{
-        flex-wrap: wrap;
-        display: flex;
-        gap: 7vw;
-    }
-    .gallery-card {
-        max-width: 45%;
-    }
-    .gallery-img img {
-        width: 100%;
-    }
-    .gallery-content h6{
-        font-size: 24px;
-    }
-    
-
-    .container-about-us{
-        margin-bottom: 14rem;
-    }
-    .colomn-img-our img{
-        max-width: 120px;
-    }
-    .colomn-img-our h2{
-        font-size: 12px;
-    }
-
-    .container-our-team{
-        min-height: 85vh;
-    }
-    .our-team-img {
-        width: 100%;
-        display: flex;
-        gap: .2rem;
-        padding: 0 1rem 0 1rem;
-    }
-    .our-team-img .img-1, .img-5 {
-        margin-top: -23vh;
-    }
-    .img-4 {
-        position: relative;
-    }
-    .img-5 {
-        position: relative;
-    }
-    .our-partner-logo .inline {
-        margin-left: 1rem;
-        width: 90%;
-        height: 2px;
-        background: #000;
-        margin-top: -.1rem;
-    }
-    
-    .circlered{
-        position: relative;
-        left: 2rem !important;
-    }
-    .logo-about{
-        position: relative;
-        left: -2rem !important;
-    }
-
-    .culture-card-container{
-        width: 90%;
-        gap: 1rem;
-        overflow-x: clip;
-    }
-    .culture-card{
-        height: 35vw;
-        width: 30vw;
-    }
-    .culture-card:nth-child(1), .culture-card:nth-child(3) {
-        height: 37vw;
-        width: 30vw;
-    }
-    .culture-card-img{
-        width: 100%;
-        height: 60%;
-    }
-    .culture-img1 {
-        width: 10vw;
-    }
-    .culture-card-content h3 {
-        font-size: 2.7vw;
-        margin-top: 0.5vh;
-    }
-    .culture-card-content p {
-        margin-top: -2vh;
-        font-size: 1.6vw;
-    }
-    .culture-title h3 {
-        font-size: 3vw;
-    }
-
-
-    .product {
-        margin-top: 2rem;
-    }
-    .product-header hr {
-        width: 8%;
-    }
-    .product-title h3{
-        font-size: 3.7vw;
-    }
-    .product-top{
-        margin-top: 3rem;
-    }
-    .product-card-container{
-        display: grid;
-        width: 100%;
-        padding: 0;
-        min-height: 140vh;
-        grid-template-columns: 450px 450px;
-        gap: 15px;
-        overflow-x: clip;
-    }
-    .product-card {
-        width: 100%;
-        height: 370px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
-    }
-    .product-card-img img{
-        width: 450px;
-    }
-    .product-card-content h6 {
-        font-size: 1.5vw;
-    }
-
-
-    .img-team{
-        max-width: 165px;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* .our-team-img .img-1,.img-5{
-        margin: 0;
-    }
-    .our-team-img .img-2,.img-4{
-        margin: 0;
-    }
-    .our-team-img .img-3{
-        margin: 0;
-    } */
-
-    .container-solution{
-        margin-top: 140rem;
-    }
-    .container-about-us{
-        max-height: 115vh;
-        margin-bottom: 10rem;
-    }
-    .imgleft{
-        display: none !important;
-        width: 0;
-    }
-    .about-us-content{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .about-us-text{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .our-partner-img{
-        gap: 1rem !important;
-    }
-    .our-partner-logo .inline{
-        margin-top: 2vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .container-footer{
-        display: block;
-        min-height: 65vh;
-    }
-    .footer-top {
-        width: 90%;
-        gap: 2rem;
-    }
-    .footer-socmed {
-        width: 30%;
-        height: 100%;
-        margin-left: 3vw;
-        margin-top: 3vh;
-    }
-    .footer-socmed-btn {
-        width: 4vw;
-        height: 4vw;
-    }
-    .footer-socmed-btn i, .footer-socmed-btn a {
-        font-size: 1.8vw;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 200px;
-        height: 250px;
-        object-fit: cover;
-    }
-    .whatsapp-logo{
-        width: 5vw;
-        height: 5vw;
-    }
-    .whatsapp-logo i, .whatsapp-logo a {
-        font-size: 2.9vw;
-    }
-
-    .footer-top{
-        width: 90%;
-    }
-    .footer-socmed{
-        width: 25%;
-    }
-
-    
-    .swiper-slide img {
-        display: block;
-        width: 200px;
-        height: 250px;
-        object-fit: cover;
-    }
-
-}
-
-@media only screen and (min-device-width: 768px) 
-  and (max-device-width: 1023px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .navbar-brand-img {
-        display: none !important;
-        width: 100%;
-        height: 100%;
+        width: 0 !important;
+        height: 0 !important;
     }
     .navbar-nav{
         margin-left: 2rem;
@@ -1203,7 +947,7 @@ object-fit: cover;
 
 
     .gallery-card-container{
-        height: 155vh;
+        max-height: 100%;
     }
     .gallery-card-top{
         flex-wrap: wrap;
@@ -1268,13 +1012,13 @@ object-fit: cover;
         padding-top: 50vh;
     }
     .handshake-content h3:nth-child(1) {
-        font-size: 15vw;
-    }
-    .handshake-content h3:nth-child(2) {
         font-size: 7vw;
     }
+    .handshake-content h3:nth-child(2) {
+        font-size: 5vw;
+    }
     .handshake-dot{
-        width: 10vw;
+        width: 7vw;
     }
     .title-btn {
         padding: 0 !important;
@@ -1308,8 +1052,12 @@ object-fit: cover;
         font-size: 3vw !important;
     }
 
+
+    .container-culture{
+        height: auto;
+    }
     .culture {
-        min-height: 140%;
+        height: auto;
     }    
     .culture-title h3{
         margin-top: 7vh;
@@ -1317,35 +1065,42 @@ object-fit: cover;
     }
     .culture-card-container{
         display: block;
+        width: 90%;
+        height: auto;
+        margin-top: 7vh;
     }
     .culture-card{
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        height: 120%;
+        width: 50% !important;
+        height: 80% !important;
+    }
+    .culture-card:nth-child(2),
+    .culture-card:nth-child(3){
+        margin-top: 3vh;
     }
     .culture-card-img{
         padding: 2vw;
     }
     .culture-img1{
-        width: 19vw;
+        width: 13vw;
     }
     .culture-card-content h3{
-        font-size: 5.7vw;
+        font-size: 3.7vw;
     }
     .culture-card-content p{
-        font-size: 4.2vw;
-    }
-    .culture-card:nth-child(1), .culture-card:nth-child(3) {
-        height: 100%;
+        font-size: 2.3vw;
+        padding-bottom: 5rem;
     }
     
 
     .product {
-        margin-top:-3rem;
+        height: auto;
     }
     .product-card-container{
         display: grid;
+        gap: 3 rem;
+        justify-content: space-evenly;
         width: 100%;
         padding: 0;
         min-height: 100vh;
@@ -1359,7 +1114,7 @@ object-fit: cover;
         font-size: 1.5vw;
     }
     .product-title h3{
-        font-size: 3.7vw;
+        font-size: 4.7vw;
     }
     .product-top{
         margin-top: 1rem;
@@ -1369,10 +1124,29 @@ object-fit: cover;
         height: 280px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
     }
+
+
     .container-solution{
         position: relative;
-        top: -25rem;
-        margin-top: 120rem;
+        margin-top: 10vh;
+    }
+    .all-solution{
+        padding-left: 1rem;
+        width: 95%;
+    }
+    .our-client{
+        gap: 1rem;
+        margin-left: auto !important;
+    }
+    .column{
+        width: 27%;
+        height: 50%;
+    }
+    .column-line{
+        margin-top: 3.6rem;
+    }
+    .column-line:nth-child(3){
+        margin-top: 3.6rem;
     }
     
 
@@ -1406,9 +1180,7 @@ object-fit: cover;
 }
 
 
-@media only screen and (min-device-width: 600px) 
-  and (max-device-width: 767px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+@media all and (min-width: 700px) and (max-width: 900px){
     .navbar-brand-img {
         display: none !important;
         width: 100%;
@@ -1438,9 +1210,6 @@ object-fit: cover;
     .culture {
         margin-bottom: 23rem;
     }
-    .container-solution {
-        margin-top: 30rem;
-    }
     .culture-card-container {
         display: grid;
         width: 100%;
@@ -1461,20 +1230,25 @@ object-fit: cover;
         margin-left: -0rem;
     }
     .product {
-        margin-top:-6rem;
+        margin-top:-1rem;
     }
     .product-title h3{
         font-size: 3.7vw;
     }
     .container-solution{
-        margin-top: 90rem;
+        margin-top: 105rem !important;
+        height: 300vh !important;
     }
+    .solution-overlay {
+        height: 300vh !important;
+        background: rgba(0, 0, 0, 0.8);
+        }
     .product-top{
         margin-top: 1rem;
     }
     .product-card {
         width: 100%;
-        height: 200px;
+        height: 240px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
     }
     .product-card-container{
@@ -1505,9 +1279,6 @@ object-fit: cover;
         padding: 0 !important;
         margin: 10px 0!important;
         text-align: center;
-    }
-    .container-solution {
-        height: 170vh;
     }
     .container-handshake{
         height: 53vh;
@@ -1556,8 +1327,13 @@ object-fit: cover;
     .img-team{
         max-width: 60%;
     }
-    .paklukman {
-        margin-left: 17.8rem !important;
+    .textnya h4{
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 6vw;
+    }
+    .textnya p{
+        font-size: 3vw !important;
     }
     .culture-img1 {
         margin-top: -3rem !important;
@@ -1592,6 +1368,19 @@ object-fit: cover;
     }
     .container-footer{
         display: block !important;
+    }
+    .our-client{
+        margin-top: 8rem !important;
+        display: grid !important;
+        height: 60rem !important;
+    }
+    .column{
+        display: grid !important;
+        width: max-content !important;
+        grid-template-columns: 500px !important;
+    }
+    .column-topnya {
+        margin-top: -7rem !important;
     }
     .footer-top{
         display: block !important;
