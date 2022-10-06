@@ -1,0 +1,1614 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta Mahee', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+html,body {
+    overflow-x: visible;
+}
+.section{
+    margin-top: -10vh;
+}
+/* Before animation*/
+[data-aos="my-animation"] {
+    transform: rotate(0) scale(0.6);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+/* After animation */
+[data-aos="my-animation"].aos-animate {
+    transform: rotate(360deg) scale(1);
+    opacity: 1; 
+}
+
+/* Preload */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgb(0, 0, 0);
+}
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
+}
+/* End preload */
+
+/* !! navbar */
+nav{
+    position: fixed !important;
+    height: 15vh;
+    display: flex;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(90px);
+    color: #fff;
+    padding: 2px 50px;
+    /* justify-content: space-around; */
+}
+
+.navbar-brand-img{
+    width: 100%;
+    height: 100%;
+    margin-top: 1vh;
+    margin-left: 3vw;
+}
+.navbar-brand{
+    width: 14%;
+    margin-top: 15vh;
+    margin-left: 1vw;
+}
+
+
+.navbar-toggler {
+    background-color: #fff !important;
+}
+
+.navbar-item{
+    display: flex;
+    width: 67%;
+}
+ul.navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5vw;
+}
+ul.navbar-nav .nav-item{
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-nav li a:hover{
+    transition: .3s;
+    color: red !important; 
+}
+.nav-item{
+    justify-content: space-between;
+}
+
+.nav-socmed{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+}
+.nav-socmed .fa-brands{
+    font-size: 19px;
+}
+.nav-socmed a:hover .fa-brands{
+    transition: .3s;
+    color: coral !important;
+    scale: 1.1;
+}
+
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+.dropdown-menu{
+    width: 45vh;
+    padding: 0 !important;
+    background-image: linear-gradient(rgb(46, 43, 43), rgb(8, 8, 8)) !important;
+    border: 1px solid rgb(230, 229, 229) !important;
+}
+.dropdown-menu li a{
+    color: rgb(219, 218, 218) !important;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu li a:hover {
+    transition: .5s;
+    background-color: rgb(160, 160, 160);
+    color: rgb(70, 64, 64) !important;
+}
+/* 
+nav.sticky {
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(90px);
+    color: #fff;
+}
+
+nav.sticky ul li a,
+nav.sticky .search input::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 400;
+} */
+/* !! End Navbar */
+
+
+/* !! Header Content */
+
+
+.v-header {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-image: url("../img/town.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.651);
+    background-size: cover;
+}
+
+.header-content{
+    margin-top: 12vh;
+}
+.header-h6{
+    justify-content: flex-end;
+    margin-right: 3vw;
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+    margin-top: 27vh;
+    text-align: right;
+}
+
+
+.header-content-title{
+    text-align: center;
+}
+.header-content .red-dot{
+    width: 40px;
+    margin-top: -10vh;
+}
+.header-content h2{
+    letter-spacing: 5px;
+    font-size:32px;
+    font-weight:700;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+    /* position: relative; */
+}
+.header-content h4{
+    letter-spacing: 6px;
+    font-size:17px;
+    /* position: relative; */
+}
+.header-content {
+    z-index: 2;
+}
+.header-content h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0;
+}
+
+.header-content-logo{
+    margin-top: 7vh;
+}
+.logo-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+    margin-top: 2vh;
+}
+.logo-1 .logo-col-1{
+    width: 6%;
+    position: relative;
+}
+.logo-1 p{
+    font-size:15px;
+    font-weight:600;
+}
+
+.circlenyaya{
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    margin-top: 5vh;
+    /* position: relative; */
+}
+.circlenyaya .circle-1{
+    width:6px;
+    height:6px;
+    border-radius:30px;
+    background:white
+}
+/* !! End Header */
+
+
+/* !! Gallery */
+.container-gallery{
+    background-color: rgb(145, 143, 143);
+    margin-top: -.1vh;
+    min-height: 117vh;
+    overflow: hidden;
+}
+.gallery-title h1{
+    padding-top: 7vh;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    font-size: 110px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.733);
+}
+.gallery-card-container{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.gallery-card{
+    min-width: 20%;
+}
+.gallery-card-top{
+    margin-top: 7vh;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+.gallery-card-bottom{
+    margin-top: 12vh;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+.gallery-img img{
+width: 100%;
+}
+.gallery-content h6{
+    margin-top: 1.5vh;
+    word-spacing: 1vw;
+    font-size: 15px;
+    color: rgb(231, 231, 231);
+}
+
+.imgleft .logo-about:hover{
+    animation-iteration-count: 2;
+    animation: nextarrow 1s infinite;
+    transition: .6s linear;
+}
+@keyframes nextarrow {
+    0%,100% {
+        transform: translateY(-3%);
+      }    
+      50% {
+        transform: translateY(2%);
+      }
+  }
+/* !! End Gallery */
+
+/* !! about us */
+.circlepink{
+    max-width: 800px;
+    left: -3vw;
+}
+.circlered{
+    position: relative;
+    top: -40rem;
+    left: -7vw;
+}
+.logo-about{
+    position: relative;
+    top: -63rem;
+    left: -11vw;
+}
+.container-about-us{
+    display: flex;
+    margin-top: 7vh;
+    height: 130vh;
+}
+.container-about-us .content-textnya{
+    float: right;
+    margin-top: -2vh;
+}
+.imgleft{
+    width: 45%;
+}
+.about-us-content{
+    min-width: 55%;
+}
+
+.about-us-text{
+    margin-top: 10vh;
+    margin-right: .5rem;
+    position: relative;
+    text-align: justify;
+}
+/* !! end about us */
+
+
+/* !! Container Handshake */
+.container-handshake{
+    padding: 0 !important;
+    background-image: url("/img/handshake.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 93vh;
+}
+.handshake-overlay{
+    width: 100%;
+    height: 93vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+.handshake-content {
+    padding-top: 57vh;
+    padding-left: 4vh;
+}
+.handshake-content h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .25vw;
+    word-spacing: .2vw;
+}
+.handshake-content h3:nth-child(1){
+    font-size: 5vw;
+}
+.handshake-content h3:nth-child(2){
+    font-size: 2.7vw;
+    font-weight: 900;
+}
+.handshake-dot{
+    margin-left: -1vw;
+    margin-top: 6vh;
+    display: flex;
+    width: 5vw;
+    justify-content: space-between;
+}
+.dot-1{
+    width:1.3vh; 
+    height:1.3vh;
+    margin-left: 1vw;
+    border-radius:30px;
+    background-color: white;
+}
+/* !! End Container Handshake */
+
+
+/* !! Container Our-team */
+.container-our-team{
+    background-color: rgb(145, 143, 143);
+    min-height: 110vh;
+    padding: 0 !important;
+}
+.our-team-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: 5px;
+}
+.our-team-title h1{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: 55px;
+    text-shadow:1px 3px 3px rgba(0, 0, 0, 0.534);
+    margin-top: 5%;
+}
+.our-team-img{
+    margin-top: 25vh;
+    min-width: 87%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-team{
+    max-width: 210px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.our-team-img .img-1,.img-2,.img-3,.img-4,.img-5{
+    color: white;
+}
+.our-team-img .img-2 .img-team{
+    display: flex;
+    justify-content: center;
+}
+.our-team-img .img-2 .textnya{
+    text-align: center;
+}
+.our-team-img .img-1,.img-5{
+    margin-top: -20vh;
+}
+.our-team-img .img-2,.img-4{
+    margin-top: -10vh;
+}
+.our-team-img .img-3{
+    margin-top: -23vh;
+}
+.img-team{
+    transform: translateY(1vh);
+    transition: .7s;
+}
+.img-team:hover{
+    cursor: pointer;
+    transform: translateY(-1vh);
+    transition: .7s;
+}
+/* !! End Our-team */
+
+/* !! Culture */
+.culture{
+    height: 70%;
+}
+.container-culture{
+    height: 100vh;
+    width: 100%;
+}
+.culture-title h3{
+    margin-top: 15vh;
+    font-size: 2.3vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 47%);
+    text-align: center;
+    word-spacing: .2vw;
+}
+
+.culture-card-container{
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 82%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.culture-card{
+    height: 25vw;
+    width: 25vw;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    border-radius: 7px;
+    padding: 2vw;
+    transition: .5s;
+}
+.culture-card:hover{
+    transform: scale(1.07) !important;
+    border: 1px solid rgba(211, 28, 28, 0.637) !important;
+    background: white !important;
+    transform: rotate(5deg) scale(1.1) !important;
+    transition: .5s !important;
+}
+.culture-card:nth-child(1),
+.culture-card:nth-child(3){
+    height: 27vw;
+}
+.culture-card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+.culture-img1{
+    width: 7vw;
+}
+.culture-card-content{
+    text-align: center;
+}
+.culture-card-content h3{
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-top: -3.5vh;
+    margin-bottom: 3.5vh;
+}
+.culture-card-content p{
+    word-spacing: .1vw;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.637);
+}
+/* !! End Culture */
+
+
+/* !! Product */
+.product{
+    height: 30%;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4vw;
+}
+.product-title{
+    display: flex;
+    margin-left: 1vw;
+}
+.product-title h3{
+    font-size: 2.7vw;
+    font-family: 'Poppins', sans-serif;
+}
+.product-title h3:nth-child(1){
+    font-weight: 700;
+    color: red;
+}
+.product-title h3:nth-child(2){
+    font-weight: 700;
+    margin-left: .3vw;
+}
+.product-header hr{
+    margin-top: -.1vh;
+    margin-left: 1vw;
+    width: 5%;
+    border: 1px solid red;
+    opacity: 100%;
+}
+
+
+.product-card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.product-card{
+    width: 7.4%;
+    height: 19vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    margin-left: .7vw;
+    margin-right: .7vw;
+    transition: .7s linear;
+}
+.product-card:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.774);
+    /* transform: translateY(-1vw); */
+    animation: product-card 3s infinite;
+    transition: .7s linear;
+    cursor: pointer;
+}
+@keyframes product-card {
+    0%,100% {
+        transform: translateY(-15%);
+    }    
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+.product-img1{
+    width: 7vw;
+    border-radius: 10px 10px 0 0;
+}
+.product-card-content{
+    width: 100%;
+    cursor: pointer;
+}
+.product-card-content h6{
+    font-size: .8vw;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2.3vh;
+    cursor: pointer;
+}
+/* !! End Product */
+
+/* Start Solution */
+.all-solution{
+    padding-left: 3.5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-solution{
+    padding: 0 !important;
+    background-image: url("https://www.inspiryconsultant.com/wp-content/uploads/2022/03/pexels-fauxels-3183197-scaled-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150vh;
+    background-size: 100rem 100rem;
+    margin-top: 30vh;
+}
+
+.solution-overlay {
+    height: 150vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.solution-circle {
+    display: flex;
+    gap: .6rem;
+    margin-top: 2rem;
+}
+.circle-1 {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.btn-contact{
+    margin-top: 3.5rem;
+    width: 210px;
+    height: 45px;
+    background: #9C2C2C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-contact:hover{
+    animation: btncontact 2s infinite;
+    transition: .5s;
+}
+@keyframes btncontact {
+    0%,100% {
+        transform: translateY(-10%);
+    }    
+    50% {
+        transform: translateY(15%);
+    }
+}
+.title-btn, .title-btn i{
+    cursor: pointer;
+}
+
+.column-line {
+    width: 100%;
+    height: 6px;
+    background:#FF0000;
+    margin-top: 5rem;
+    transition: .7s;
+}
+
+.column:hover .column-line {
+    width: 0%;
+    transition: .7s;
+    /* animation: columnline .7s; */
+}
+/* @keyframes columnline {
+    0%{
+        width:100%;
+    }
+    100%{
+        width:0%;
+    }
+} */
+
+
+.swiper {
+width: 100%;
+height: 400px;
+background: #DFDFDF;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 220px;
+height: 300px;
+object-fit: cover;
+}
+/* End Solution */
+
+/* Start our partner */
+.our-partner-logo h1{
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 600;
+    text-shadow: 5px 2px #3333332d;
+}
+
+.colomn-img-our img:hover{
+    animation: nextarrow 2s infinite;
+    transition: .6s linear;
+}
+.colomn-img-our h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: #474747;
+    font-weight: 700;
+}
+
+.our-partner-logo .inline {
+    margin-left: 8rem;
+    width: 85%;
+    height: 2px;
+    background: #000;
+    margin-top: -.1rem;
+}
+/* End our partner */
+
+/* !! footer */
+.container-footer{
+    display: flex;
+    margin-top: 10vh;
+}
+.footer-top{
+    display: flex;
+}
+.footer-address{
+    width: 50%;
+    height: 100%;
+}
+.footer-address p,b{
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+.footer-address img{
+    width: 70%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-address-content{
+    margin-top: 5vh;
+    display: flex;
+}
+.address-office{
+    width: 45%;
+    margin-left: 2vw;
+}
+.address-marketing{
+    width: 55%;
+    margin-left: 2vw;
+}
+
+.footer-map{
+    width: 50%;
+    height: 100%;
+}
+.footer-map h2, .footer-socmed h2{
+    font-family: 'helvetica', sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.footer-socmed{
+    width: 35%;
+    height: 100%;
+    margin-left: 3vw;
+    margin-right: auto;
+}
+.footer-socmed-title{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-socmed-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-socmed-btn{
+    width: 3vw;
+    height: 3vw;
+    background: #000;
+    border-radius: 100px;
+    border: 1px solid grey;
+    margin-left: -7vw;
+    transition: .4s;
+}
+.footer-socmed-btn:hover{
+    width: 3vw;
+    height: 3vw;
+    background: rgba(105, 105, 105, 0.774);
+    border-radius: 100px;
+    transition: .4s;
+}
+.footer-socmed-btn:nth-child(2),
+.footer-socmed-btn:nth-child(3),
+.footer-socmed-btn:nth-child(4){
+    margin-left: -7vw;
+}
+.footer-socmed-btn i,.footer-socmed-btn a{
+    color: white;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* !! end footer */
+
+/* !! whatsapp logo */
+.whatsapp-logo{
+	position:fixed;
+	width:3.5vw;
+	height:3.5vw;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+    border: 1px solid white;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+    z-index:100;
+    transition: .4s;
+    cursor: pointer;
+}
+.whatsapp-logo:hover{
+    transform: translateY(-2vh);
+    transition: .5s;
+}
+.whatsapp-logo i, .whatsapp-logo a{
+    color: white;
+    font-size: 1.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .whatsapp-logo{
+    width: 3vw;
+    height: 3vw;
+    background: #25D366;
+    border-radius: 100px;
+    border: 1px solid grey;
+    margin-left: -7vw;
+    transition: .4s;
+    position: absolute;
+} */
+/* !! End whatsapp logo */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1){
+    .gallery-card:nth-child(4) img{
+        height: 170px !important;
+    }
+
+    .our-team-img{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .circlepink{
+        position:relative;
+        left: -10vw;
+    }
+    .circlered{
+        left: -9vw;
+    }
+    .logo-about{
+        left: -15vw;
+    }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1){
+    .navbar-nav{
+        margin-left: -5rem;
+    }
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-socmed {
+        display: none !important;
+    }
+    .gallery-card-container{
+        height: 220vh;
+    }
+    .gallery-card-top{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card-bottom{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card {
+        max-width: 45%;
+    }
+    .gallery-img img {
+        width: 100%;
+    }
+    .gallery-content h6{
+        font-size: 24px;
+    }
+    
+
+    .container-about-us{
+        margin-bottom: 14rem;
+    }
+    .colomn-img-our img{
+        max-width: 120px;
+    }
+    .colomn-img-our h2{
+        font-size: 12px;
+    }
+
+    .container-our-team{
+        min-height: 85vh;
+    }
+    .our-team-img {
+        width: 100%;
+        display: flex;
+        gap: .2rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .our-team-img .img-1, .img-5 {
+        margin-top: -23vh;
+    }
+    .img-4 {
+        position: relative;
+    }
+    .img-5 {
+        position: relative;
+    }
+    .our-partner-logo .inline {
+        margin-left: 1rem;
+        width: 90%;
+        height: 2px;
+        background: #000;
+        margin-top: -.1rem;
+    }
+    
+    .circlered{
+        position: relative;
+        left: 2rem !important;
+    }
+    .logo-about{
+        position: relative;
+        left: -2rem !important;
+    }
+
+    .culture-card-container{
+        width: 90%;
+        gap: 1rem;
+        overflow-x: clip;
+    }
+    .culture-card{
+        height: 35vw;
+        width: 30vw;
+    }
+    .culture-card:nth-child(1), .culture-card:nth-child(3) {
+        height: 37vw;
+        width: 30vw;
+    }
+    .culture-card-img{
+        width: 100%;
+        height: 60%;
+    }
+    .culture-img1 {
+        width: 10vw;
+    }
+    .culture-card-content h3 {
+        font-size: 2.7vw;
+        margin-top: 0.5vh;
+    }
+    .culture-card-content p {
+        margin-top: -2vh;
+        font-size: 1.6vw;
+    }
+    .culture-title h3 {
+        font-size: 3vw;
+    }
+
+
+    .product {
+        margin-top: 2rem;
+    }
+    .product-header hr {
+        width: 8%;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .product-top{
+        margin-top: 3rem;
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 140vh;
+        grid-template-columns: 450px 450px;
+        gap: 15px;
+        overflow-x: clip;
+    }
+    .product-card {
+        width: 100%;
+        height: 370px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .product-card-img img{
+        width: 450px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
+
+
+    .img-team{
+        max-width: 165px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* .our-team-img .img-1,.img-5{
+        margin: 0;
+    }
+    .our-team-img .img-2,.img-4{
+        margin: 0;
+    }
+    .our-team-img .img-3{
+        margin: 0;
+    } */
+
+    .container-solution{
+        margin-top: 140rem;
+    }
+    .container-about-us{
+        max-height: 115vh;
+        margin-bottom: 10rem;
+    }
+    .imgleft{
+        display: none !important;
+        width: 0;
+    }
+    .about-us-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-text{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .our-partner-img{
+        gap: 1rem !important;
+    }
+    .our-partner-logo .inline{
+        margin-top: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-footer{
+        display: block;
+        min-height: 65vh;
+    }
+    .footer-top {
+        width: 90%;
+        gap: 2rem;
+    }
+    .footer-socmed {
+        width: 30%;
+        height: 100%;
+        margin-left: 3vw;
+        margin-top: 3vh;
+    }
+    .footer-socmed-btn {
+        width: 4vw;
+        height: 4vw;
+    }
+    .footer-socmed-btn i, .footer-socmed-btn a {
+        font-size: 1.8vw;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .whatsapp-logo{
+        width: 5vw;
+        height: 5vw;
+    }
+    .whatsapp-logo i, .whatsapp-logo a {
+        font-size: 2.9vw;
+    }
+
+    .footer-top{
+        width: 90%;
+    }
+    .footer-socmed{
+        width: 25%;
+    }
+
+    
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar-nav{
+        margin-left: 2rem;
+    }
+    .navbar.collapse {
+        display:flex;
+    }
+    .navbar.collapsing,
+    .navbar.show {
+        padding: 0;
+        margin-top: -1rem;
+        background:rgba(0, 0, 0, 0.549) !important;
+    }
+
+
+    .gallery-card-container{
+        height: 155vh;
+    }
+    .gallery-card-top{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card-bottom{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 7vw;
+    }
+    .gallery-card {
+        max-width: 45%;
+    }
+    .gallery-img img {
+        width: 100%;
+    }
+    .gallery-content h6{
+        font-size: 24px;
+    }
+
+
+    .container-about-us{
+        max-height: 140vh;
+        margin-bottom: 13rem;
+    }
+    .colomn-img-our img{
+        max-width: 120px;
+    }
+    .colomn-img-our h2{
+        font-size: 12px;
+    }
+    .imgleft{
+        display: none !important;
+        width: 0;
+    }
+    .about-us-title h1:nth-child(1){
+        font-size: 65px !important;
+    }
+    .about-us-title h1:nth-child(2){
+        font-size: 60px !important;
+    }
+    .circlenyaya .circle1{
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .about-us-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-text{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-text p{
+        font-size: 23px !important;
+    }
+
+    .handshake-content{
+        padding-top: 50vh;
+    }
+    .handshake-content h3:nth-child(1) {
+        font-size: 15vw;
+    }
+    .handshake-content h3:nth-child(2) {
+        font-size: 7vw;
+    }
+    .handshake-dot{
+        width: 10vw;
+    }
+    .title-btn {
+        padding: 0 !important;
+        margin: 10px 0!important;
+        text-align: center;
+    }
+    
+
+    .our-team-title h1{
+        font-size: 10vw !important;
+    }
+    .our-team-img {
+        display: block;
+        width: 100%;
+        margin-top: 5vh;
+        padding-bottom: 10vh;
+    }
+    .our-team-img .img-1,.img-2,.img-3,.img-4,.img-5{
+        margin-top: 2vh !important;
+        min-height: 100%;
+    }
+    .img-team{
+        max-width: 60%;
+    }
+    .textnya h4{
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 6vw;
+    }
+    .textnya p{
+        font-size: 3vw !important;
+    }
+
+    .culture {
+        min-height: 140%;
+    }    
+    .culture-title h3{
+        margin-top: 7vh;
+        font-size: 6vw;
+    }
+    .culture-card-container{
+        display: block;
+    }
+    .culture-card{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 120%;
+    }
+    .culture-card-img{
+        padding: 2vw;
+    }
+    .culture-img1{
+        width: 19vw;
+    }
+    .culture-card-content h3{
+        font-size: 5.7vw;
+    }
+    .culture-card-content p{
+        font-size: 4.2vw;
+    }
+    .culture-card:nth-child(1), .culture-card:nth-child(3) {
+        height: 100%;
+    }
+    
+
+    .product {
+        margin-top:-3rem;
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        grid-template-columns: 300px 300px;
+        gap: 15px;
+    }
+    .product-card-img img{
+        width: 300px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .product-top{
+        margin-top: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        height: 280px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .container-solution{
+        position: relative;
+        top: -25rem;
+        margin-top: 120rem;
+    }
+    
+
+    .swiper-slide img {
+        display: block;
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .colomn-img-our img{
+        max-width: 105px;
+    }
+    .colomn-img-our h2{
+        font-size: 12px;
+    }
+    .our-partner-logo .inline {
+        margin-left: 1rem;
+        width: 90%;
+        height: 2px;
+        background: #000;
+        margin-top: -.1rem;
+    }
+
+    .whatsapp-logo{
+        width: 5vw;
+        height: 5vw;
+    }
+    .whatsapp-logo i, .whatsapp-logo a {
+        font-size: 2.9vw;
+    }
+}
+
+
+@media only screen and (min-device-width: 600px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .navbar-brand-img {
+        display: none !important;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar.collapsing,
+    .navbar.show {
+        padding: 0;
+        margin-top: -1rem;
+        background:rgba(0, 0, 0, 0.549) !important;
+    }
+    .imgleft{
+        display: none !important;
+    }
+    .gallery-card-top,.gallery-card-bottom {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        grid-template-columns: 500px;
+        gap: 15px;
+    }
+    .gallery-content h6{
+        text-align: center;
+        font-size: 15px;
+    }
+    .culture {
+        margin-bottom: 23rem;
+    }
+    .container-solution {
+        margin-top: 30rem;
+    }
+    .culture-card-container {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 100vh;
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .our-partner-logo .inline {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        margin-top: -.1rem;
+        margin-left: -0rem;
+    }
+    .product {
+        margin-top:-6rem;
+    }
+    .product-title h3{
+        font-size: 3.7vw;
+    }
+    .container-solution{
+        margin-top: 90rem;
+    }
+    .product-top{
+        margin-top: 1rem;
+    }
+    .product-card {
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+    }
+    .product-card-container{
+        display: grid;
+        width: 100%;
+        padding: 0;
+        min-height: 120vh;
+        grid-template-columns: 220px 220px;
+        gap: 15px;
+    }
+    .product-card-img img{
+        width: 220px;
+    }
+    .product-card-content h6 {
+        font-size: 1.5vw;
+    }
+    .btn-contact {
+        width: 210px;
+        position: absolute;
+        top: 43rem !important;
+        margin: 0;
+        height: 45px;
+        background: #9C2C2C;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .title-btn {
+        padding: 0 !important;
+        margin: 10px 0!important;
+        text-align: center;
+    }
+    .container-solution {
+        height: 170vh;
+    }
+    .container-handshake{
+        height: 53vh;
+    }
+    .handshake-overlay{
+        width: 100%;
+        height: 53vh;
+        background: rgba(0, 0, 0, 0.5);
+        background-size: cover;
+    }
+    .handshake-content {
+        padding-top: 30vh;
+    }
+    .solution-overlay {
+    height: 170vh;
+    background: rgba(0, 0, 0, 0.8);
+    }
+    .swiper-slide img {
+        display: block;
+        width: 180px;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        object-fit: cover;
+    }
+    .swiper-slide {
+        margin-left: 10rem !important;
+    }
+    .our-partner-img {
+        display: grid !important;
+        justify-content: center;
+        grid-template-columns: 100px;
+        gap: 5rem !important;
+        margin-left: -0.1rem !important;
+    }
+    .our-team-img {
+        display: block;
+        width: 100%;
+        margin-top: 5vh;
+        padding-bottom: 10vh;
+    }
+    .our-team-img .img-1,.img-2,.img-3,.img-4,.img-5{
+        margin-top: 2vh !important;
+        min-height: 100%;
+    }
+    .img-team{
+        max-width: 60%;
+    }
+    .paklukman {
+        margin-left: 17.8rem !important;
+    }
+    .culture-img1 {
+        margin-top: -3rem !important;
+    }
+    .topnyaya {
+        margin-top:-5rem;
+    }
+    .topnyaya5 {
+        margin-top:-2.6rem !important;
+    }
+    .colomn-img-our h2 br{
+       display :none;
+    }
+    .colomn-img-our .text-partnert-6,
+    .colomn-img-our .text-partnert-2,
+    .colomn-img-our .text-partnert-4,
+    .colomn-img-our .text-partnert-5{
+        margin-left: -3rem;
+    }
+    .colomn-img-our .text-partnert-3{
+        margin-left: -5rem;
+    }
+    .colomn-img-our .text-partnert-1{
+        position:relative;
+        right: 14rem;
+    }
+    .colomn-img-our h2{
+        width: max-content !important;
+    }
+    .colomn-img-our img {
+        width: 185px;
+    }
+    .container-footer{
+        display: block !important;
+    }
+    .footer-top{
+        display: block !important;
+    }
+    .footer-address {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-map{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .footer-socmed {
+        margin-top: 2rem;
+    }
+    .whatsapp-logo{
+        display: none;
+        width: 0;
+    }
+}
